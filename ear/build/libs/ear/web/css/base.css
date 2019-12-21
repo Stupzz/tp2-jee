@@ -1,0 +1,25 @@
+@charset "ISO-8859-1";
+
+h1 {
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    witdh: 25em;
+}
+
+th, td, tr {
+    border: thin solid black;
+    padding: 0.5em;
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+td:nth-child(2){
+    text-align: left;
+    width: 10em;
+}

@@ -1,0 +1,27 @@
+apply plugin: 'java'
+
+// In this section you declare where to find the dependencies of your project
+repositories {
+    // Use jcenter for resolving your dependencies.
+    jcenter()
+    // You can declare any Maven/Ivy/file repository here.
+    //mavenCentral()
+}
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+dependencies {
+    compileOnly  group: 'javax', name: 'javaee-api', version: '7.0'
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.13'
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.3.6.Final'
+    compile group: 'org.hibernate', name: 'hibernate-entitymanager', version: '4.1.7.Final'
+    // https://mvnrepository.com/artifact/org.apache.tomee/openejb-core-hibernate
+    compile group: 'org.apache.tomee', name: 'openejb-core-hibernate', version: '7.0.4', ext: 'pom'
+    compileOnly 'org.projectlombok:lombok:1.18.10'
+
+
+
+
+}
+

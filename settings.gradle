@@ -1,0 +1,9 @@
+rootProject.name = 'tp2-j2ee'
+
+include ':ejb'
+include ':web'
+include ':ear'
+
+project(':ejb').projectDir = "$rootDir/ejb" as File
+project(':web').projectDir = "$rootDir/web" as File
+project(':ear').projectDir = "$rootDir/ear" as File

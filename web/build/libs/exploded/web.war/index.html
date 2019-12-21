@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion des backlogs</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="agence">Agence</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <h1>Tp2 réalisé par Mathieu CARBONNIER et Jordan ARRIGO</h1>
+    <p>Le but de cette application est la gestion de backlog de différentes agences.</p>
+    <p>L'application permet de :</p>
+    <p> - Créer une agence</p>
+    <p> - Voir toute les agences créer</p>
+    <p> - Sélectionner une agence pour ainsi lui créer un backlog</p>
+    <p> - Créer des userstorys dans ce backlog</p>
+    <p> - Et de créer des commentaires pour des userstorys</p>
+    <p> Attention, Les colonnes n'ont pas était implémenté, car après plusieurs essaies pour les afficher correctement,
+        nous n'arrivions pas à avoir un résultat satisfaisant</p>
+
+    <br>
+
+    <h3>L'authentification</h3>
+    <p>Dans un premier temps, nous avons choisi de réalisé une authentification pour savoir quel utilisateur est en
+        train d'utiliser l'application (utile pour les commentaires, nous verrons celà plus bas).</p>
+
+    <h3>Page des agences/création d'agence</h3>
+    <img src="images/agences.png">
+    <p>Sur cette page, nous pouvons créer une agence en lui attribuant un nom. Puis en dessous, nous pouvons voir toute
+        les agences créer. Pour chaque agence, nous pouvons accéder à ses détails, ou supprimer l'agence. </p>
+
+    <br>
+
+    <h3>Page de l'agence</h3>
+    <img src="images/agence1.png">
+    <p>Lorque nous arrivons sur les détails de l'agence. Ici l'agence étant fraichement créé, elle ne possède pas encore
+        de backlog (sinonnous serions directement arrivé à l'image suivant). Le logiciel nous propose donc de le créer.
+        Il faudra renseigner une priorité pour ce backlog, une estimation de temps en heure, ainsi qu'un descriptif du
+        backlog.</p>
+    <img src="images/agence2.png">
+    <p>Une fois tous cela renseigné, nous arrivons sur la page des détails de l'agence. Cette dernière nous permet de
+        visualiser les informations précédemment renseigné. Et nous donne un accès vers la page du backlog.</p>
+
+    <br>
+
+    <h3>Page du backlog</h3>
+    <img src="images/backlog.png">
+    <p>Sur cette page, nous avons 2 fonctionnalités :</p>
+    <p> - Nous pouvons créer une userstory en lui donnant un nom</p>
+    <p> - Nous pouvons également voir et consulter (en cliquant sur le bouton "Voir les commentaires") les userstorys du
+        backlog</p>
+
+    <br>
+    <h3>Page d'une userstory</h3>
+    <img src="images/userstory.png">
+    <p>Sur cette dernière page, nous pouvons dans un premier temps créer un commentaire, mais également voir tout les
+        commentaires déjà présent sur cette userstory. A chaque commentaire est associé, une date ainsi que le nom de
+        l'utilisateur l'ayant posté. L'application connais votre nom puisque c'est grâce à ce dernier que vous avez pu
+        vous authentifier.</p>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
